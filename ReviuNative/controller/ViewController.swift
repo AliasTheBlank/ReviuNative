@@ -15,5 +15,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func LogInTouchUpInside(_ sender: Any) {
+        self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+    }
 }
 

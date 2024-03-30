@@ -13,6 +13,7 @@
 		C612EDF62B2AB08500E4AC4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C612EDF42B2AB08500E4AC4B /* Main.storyboard */; };
 		C612EDF82B2AB08600E4AC4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C612EDF72B2AB08600E4AC4B /* Assets.xcassets */; };
 		C612EDFB2B2AB08600E4AC4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C612EDF92B2AB08600E4AC4B /* LaunchScreen.storyboard */; };
+		C6E106B12BB86BB900BDD2E3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E106B02BB86BB900BDD2E3 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C612EDF72B2AB08600E4AC4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C612EDFA2B2AB08600E4AC4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C612EDFC2B2AB08600E4AC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E106B02BB86BB900BDD2E3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		C612EDED2B2AB08500E4AC4B /* ReviuNative */ = {
 			isa = PBXGroup;
 			children = (
+				C65146452B2FA2C100D92639 /* controller */,
+				C65146442B2FA2AE00D92639 /* views */,
 				C612EDEE2B2AB08500E4AC4B /* AppDelegate.swift */,
 				C612EDF02B2AB08500E4AC4B /* SceneDelegate.swift */,
-				C612EDF22B2AB08500E4AC4B /* ViewController.swift */,
-				C612EDF42B2AB08500E4AC4B /* Main.storyboard */,
 				C612EDF72B2AB08600E4AC4B /* Assets.xcassets */,
-				C612EDF92B2AB08600E4AC4B /* LaunchScreen.storyboard */,
 				C612EDFC2B2AB08600E4AC4B /* Info.plist */,
 			);
 			path = ReviuNative;
+			sourceTree = "<group>";
+		};
+		C65146442B2FA2AE00D92639 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C612EDF92B2AB08600E4AC4B /* LaunchScreen.storyboard */,
+				C612EDF42B2AB08500E4AC4B /* Main.storyboard */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		C65146452B2FA2C100D92639 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C612EDF22B2AB08500E4AC4B /* ViewController.swift */,
+				C6E106B02BB86BB900BDD2E3 /* RegisterViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +160,7 @@
 				C612EDF32B2AB08500E4AC4B /* ViewController.swift in Sources */,
 				C612EDEF2B2AB08500E4AC4B /* AppDelegate.swift in Sources */,
 				C612EDF12B2AB08500E4AC4B /* SceneDelegate.swift in Sources */,
+				C6E106B12BB86BB900BDD2E3 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,11 +314,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ReviuNative/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Reviuw;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,11 +343,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ReviuNative/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Reviuw;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
