@@ -43,6 +43,9 @@
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="eye.slash" catalog="system"/>
+                                                <connections>
+                                                    <action selector="showPasswordTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gx-pT-az6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -112,6 +115,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="showPasswordButton" destination="tqY-6E-Bct" id="W5A-3l-Er7"/>
+                        <outlet property="txtPassword" destination="Ggn-6D-2S7" id="eFm-Yf-RX1"/>
+                        <outlet property="txtUsername" destination="gBA-mf-sFd" id="f6P-QG-0re"/>
                         <segue destination="4P2-OV-CUV" kind="presentation" identifier="toFeedVC" modalPresentationStyle="fullScreen" id="5O5-dv-39R"/>
                     </connections>
                 </viewController>
